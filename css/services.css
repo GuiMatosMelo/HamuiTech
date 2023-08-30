@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+#serviceTag{
+    position: absolute;
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+#serviceTag h1 {
+    color:black ;
+    opacity: unset;
+}
+#modalContact{
+    border-top: 3000px;
+}
+#card{
+    border-radius: 10px;
+}
+#card header {
+    margin-left: 70px;
+}
+
+#card header h1 {
+    text-align: center;
+}
+
+.format1 {
+    border-color: #0abffb;
+    border-width: 2px;
+    border-style: solid;
+    width: 205px;
+    height: 200px;
+    border-radius: 80%;
+    background-image: url(/assets/img/matriz-do-computador-com-bonecas.jpg) ;
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.format2 {
+    border-color: #0abffb;
+    border-width: 2px;
+    border-style: solid;
+    width: 205px;
+    height: 200px;
+    border-radius: 80%;
+    background-image: url(/assets/img/close-de-streaming-de-bate-papo-no-estudio-de-jogo-vazio-durante-torneio-de-videogame-online.jpg);
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.format3 {
+    border-color: #0abffb;
+    border-width: 2px;
+    border-style: solid;
+    width: 205px;
+    height: 200px;
+    border-radius: 80%;
+    background-image: url(/assets/img/18907.jpg );
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.title {
+    margin-left: -80px;
+    margin-bottom: 30px;
+}
+
+.listOfServices ul li {
+    color: #0abffb;   
+}
+
+.listOfServices ul li span p {
+    color: #000;
+}
+
+/* Responsividade */
+/* Smartphones em modo retrato */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+
+    .flex-container {
+        flex-direction: column;
+    }   
+    #card header {
+        margin-left: 30px;
+    }
+    .listOfServices ul li{
+        padding: 0px;
+        margin: -20px;
+    }
+    .title{
+        margin-left: -30px;
+        margin-bottom: 40px;   
+    }
+}
+  
+/* Smartphones em modo paisagem e tablets em modo retrato */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+
+    .flex-container {
+        flex-direction: column;
+    }   
+    #card header {
+        margin-left: 80px;
+    }
+    .listOfServices ul li{
+        padding: 0px;
+        margin: -20px;
+    }
+    .listOfServices ul li span p{
+        font-size: 30px;
+        
+    }
+    .title{
+        margin-left: -80px;
+        margin-bottom: 40px;   
+    }
+
+    .format1, .format2, .format3{
+        margin-left: 120px;
+    }
+}
