@@ -1,25 +1,43 @@
-<nav class="bg-white shadow-lg">
-    <div class="container mx-auto px-6 py-9">
-        <div class="flex items-center justify-between">
-            <div class="transform text-xl font-semibold text-blue-900">
-                <div class="h-16">
-                    <a routerLink="/"><img src="../../../../assets/images/logoTransparente.png" alt="" class="h-26 max-h-screen"></a>
-                </div>
-            </div>
-            <div class="flex space-x-4">
-                <a routerLink="/"
-                    class="text-gray-900 font-sans font-medium px-5 tracking-wide text-base transform hover:scale-110 hover:duration-500 hover:text-blue-900 text-xl">Home</a>
-                <a routerLink="/servicos"
-                    class="text-gray-900 font-sans font-medium px-5 tracking-wide text-base transform hover:scale-110 hover:duration-500 hover:text-blue-900 text-xl">Serviços</a>
-                <a routerLink="/unidades"
-                    class="text-gray-900 font-sans font-medium px-5 tracking-wide text-base transform hover:scale-110 hover:duration-500 hover:text-blue-900 text-xl">Unidades</a>
-                
-                <a routerLink="/contato"
-                    class="text-gray-900 font-sans font-medium px-5 tracking-wide text-base transform hover:scale-110 hover:duration-500 hover:text-blue-900 text-xl">Contato</a>
-                <a href="#FAQ"
-                    class="text-gray-900 font-sans font-medium px-5 tracking-wide text-base transform hover:scale-110 hover:duration-500 hover:text-blue-900 text-xl">FAQ</a>
-            </div>
+<!-- component -->
+<style>
+    #menu-toggle:checked+#menu {
+        display: block;
+    }
+</style>
+<div class="antialiased bg-gray-400">
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#">
+                <img class="h-10 object-cover"
+                src="../../../../assets/images/logoTransparente.png" alt="Store Logo">
+            </a>
         </div>
-    </div>
-</nav>
+
+        <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900"
+                xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+            <nav>
+                <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                            href="#">Home</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                            routerLink="/servicos">Serviços</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                            routerLink="/contato">Contato</a></li>
+                    <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2"
+                            href="#">FAQ</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+
+</div>
 <hr style="height: 6px; background-color:#1c74ba; border:none;">
