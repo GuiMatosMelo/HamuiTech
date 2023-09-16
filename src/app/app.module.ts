@@ -33,7 +33,7 @@ import { GridProvaSocialComponent } from './pages/home/grid-prova-social/grid-pr
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

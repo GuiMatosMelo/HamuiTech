@@ -10,6 +10,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 999;
+    transition: background-color 1.3s ease
 }
 
 .whatsapp-widget a {
@@ -24,27 +25,30 @@
 }
 
 .whatsapp-widget a fa-icon {
-    margin-right: 10px;
-    font-size: 18px;
+    margin-right: 1px;
+    font-size: 25px;
+}
+
+.whatsapp-widget span{
+    opacity: 0;
+    display: none;
 }
 
 .whatsapp-widget a:hover {
     background-color: #128C7E;
 }
 
+.whatsapp-widget a:hover fa-icon {
+    margin-right: 5px;
+}
+
+.whatsapp-widget a:hover span {
+    opacity: 1;
+    display: inline;
+}
+
 .whatsapp-icon {
     font-size: 25px;
     margin-right: 10px;
 }
-
-/* Esconda o texto inicialmente e defina uma transição para suavizar a animação */
-.whatsapp-text {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  /* Quando o mouse estiver sobre o elemento pai (a), mostre o texto com uma animação de fade-in */
-  .whatsapp-link:hover .whatsapp-text {
-    opacity: 1;
-  }
   
