@@ -6,5 +6,8 @@ video {
 
 .imageQuemSomos{
     background-color: white;
-    border-radius: 180px;
+    border-radius: 360px;
+    border-style: double;
+    border-color: black ;
+    border-width: 10px;
 }
