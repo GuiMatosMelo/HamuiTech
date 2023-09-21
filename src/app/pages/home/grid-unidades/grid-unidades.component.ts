@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./grid-unidades.component.css']
 })
 export class GridUnidadesComponent {
-
+  unidadeOption: string = '';
+  enderecoOption: string = '';
+  unidades: string[] = ['Click Componentes', 'Click & Cell', 'Stilo Cell'];
+  enderecos = ['Avenida Presidente Vargas' , 'Avenida Rubens Caramez', 'Avenida Rubens Caramez'];
 }
