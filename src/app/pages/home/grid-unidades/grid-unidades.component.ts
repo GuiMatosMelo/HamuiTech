@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-grid-unidades',
@@ -9,5 +10,13 @@ export class GridUnidadesComponent {
   unidadeOption: string = '';
   enderecoOption: string = '';
   unidades: string[] = ['Click Componentes', 'Click & Cell', 'Stilo Cell'];
-  enderecos = ['Avenida Presidente Vargas' , 'Avenida Rubens Caramez', 'Avenida Rubens Caramez'];
+  enderecos = ['Avenida Presidente Vargas' , 'Avenida Rubens Caramez'];
+
+  constructor(private router: Router) {}
+
+  enviarOpcoesSelecionadas() {
+    this.router.navigate(['/unidades'], {
+      queryParams: { unidade: this.unidadeOption, endereco: this.enderecoOption },
+    });
+  }
 }
