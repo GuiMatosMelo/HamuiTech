@@ -17,6 +17,8 @@ import { GridProvaSocialComponent } from './pages/home/grid-prova-social/grid-pr
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
 import { CardHomeComponent } from './components/card-home/card-home.component';
+import { NgxSplideModule } from 'ngx-splide';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +35,15 @@ import { CardHomeComponent } from './components/card-home/card-home.component';
     GridFaqComponent,
     GridProvaSocialComponent,
     CardComponent,
-    CardHomeComponent
+    CardHomeComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    FormsModule 
+    FormsModule,
+    NgxSplideModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
