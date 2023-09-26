@@ -16,6 +16,7 @@ import { GridFaqComponent } from './pages/home/grid-faq/grid-faq.component';
 import { GridProvaSocialComponent } from './pages/home/grid-prova-social/grid-prova-social.component';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
+import { CardHomeComponent } from './components/card-home/card-home.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CardComponent } from './components/card/card.component';
     GridServicosComponent,
     GridFaqComponent,
     GridProvaSocialComponent,
-    CardComponent
+    CardComponent,
+    CardHomeComponent
   ],
   imports: [
     BrowserModule,
