@@ -14,6 +14,8 @@ import { GridQuemSomosComponent } from './pages/home/grid-quem-somos/grid-quem-s
 import { GridServicosComponent } from './pages/home/grid-servicos/grid-servicos.component';
 import { GridFaqComponent } from './pages/home/grid-faq/grid-faq.component';
 import { GridProvaSocialComponent } from './pages/home/grid-prova-social/grid-prova-social.component';
+import { FormsModule } from '@angular/forms';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { GridProvaSocialComponent } from './pages/home/grid-prova-social/grid-pr
     GridQuemSomosComponent,
     GridServicosComponent,
     GridFaqComponent,
-    GridProvaSocialComponent
+    GridProvaSocialComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
