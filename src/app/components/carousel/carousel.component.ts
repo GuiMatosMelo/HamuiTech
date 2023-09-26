@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Carousel, initTE } from 'tw-elements';
 
 @Component({
   selector: 'app-carousel',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent {
+  ngOnInit(): void {
+    initTE({ Carousel });
+  }
 }

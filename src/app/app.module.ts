@@ -19,6 +19,7 @@ import { CardComponent } from './components/card/card.component';
 import { CardHomeComponent } from './components/card-home/card-home.component';
 import { NgxSplideModule } from 'ngx-splide';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     FontAwesomeModule,
     FormsModule,
     NgxSplideModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
