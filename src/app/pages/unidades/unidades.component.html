@@ -12,23 +12,26 @@
           <div class="bottomBox grid grid-cols-12 gap-12 p-4 sm:p-8">
               <!-- Lado Esquerdo -->
               <div class="main_left grid col-span-8 sm:col-span-6 ">
-                  <select [(ngModel)]="unidadeOption" (change)="filtrarCards()"
-                          class="block w-full px-4 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  >
-                      <option value="">Unidades</option>
-                      <option *ngFor="let unidade of unidades" [value]="unidade">{{ unidade }}</option>
-                  </select>
+                <select [(ngModel)]="unidadeOption" (change)="filtrarCards()"
+                  [disabled]="enderecoOption !== ''"
+                  class="block w-full px-4 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                >
+                  <option value="">Unidades</option>
+                  <option *ngFor="let unidade of unidades" [value]="unidade">{{ unidade }}</option>
+                </select>
               </div>
-
+              
               <!-- Lado Direito -->
               <div class="main_right grid col-span-8 sm:col-span-6">
-                  <select [(ngModel)]="enderecoOption" (change)="filtrarCards()"
-                          class="block w-full px-4 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                  >
-                      <option value="">Endereços</option>
-                      <option *ngFor="let endereco of enderecos" [value]="endereco">{{ endereco }}</option>
-                  </select>
+                <select [(ngModel)]="enderecoOption" (change)="filtrarCards()"
+                  [disabled]="unidadeOption !== ''"
+                  class="block w-full px-4 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                >
+                  <option value="">Endereços</option>
+                  <option *ngFor="let endereco of enderecos" [value]="endereco">{{ endereco }}</option>
+                </select>
               </div>
+              
           </div>
       </div>
   </div>
