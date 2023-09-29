@@ -2,9 +2,9 @@
     <div class="title text-center text-3xl">
         <div class="box border rounded-3xl border-red-300">
             <h1 class="font-black p-6">Escolha um dos pontos de coleta na HaimuTech</h1>
-            <div class="bottomBox grid grid-cols-12 gap-12 p-4 sm:p-8">
+            <div class="bottomBox grid grid-cols-12 gap-12 p-4 sm:p-8 max-sm:grid-rows-4 max-sm:grid-flow-col max-sm:gap-4">
                 <!-- Lado Esquerdo -->
-                <div class="main_left grid col-span-8 sm:col-span-6">
+                <div class="main_left grid col-span-8 sm:col-span-6 max-sm:w-64 grid-rows-1">
                     <select [(ngModel)]="unidadeOption" [disabled]="enderecoOption !== ''"
                         class="block w-full px-4 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="">Unidades</option>
@@ -13,7 +13,7 @@
                 </div>
 
                 <!-- Lado Direito -->
-                <div class="main_right grid col-span-8 sm:col-span-6">
+                <div class="main_right grid col-span-8 sm:col-span-6 max-sm:w-64">
                     <select [(ngModel)]="enderecoOption" [disabled]="unidadeOption !== ''"
                         class="block w-full px-4 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         <option value="">Endereços</option>
