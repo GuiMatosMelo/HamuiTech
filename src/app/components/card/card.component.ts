@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() unidade: string = '';
   @Input() endereco: string = '';
+  @Input() foto: string = '';
 }

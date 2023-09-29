@@ -13,10 +13,13 @@ export class UnidadesComponent implements OnInit {
   unidades: string[] = ['Click Componentes', 'Click & Cell', 'Stilo Cell'];
   enderecos: string[] = ['Avenida Presidente Vargas', 'Avenida Rubens Caramez'];
   items = [
-    { title: 'Card 1', unidade: 'Click Componentes', endereco: 'Avenida Presidente Vargas' },
-    { title: 'Card 2', unidade: 'Click & Cell', endereco: 'Avenida Rubens Caramez' },
-    { title: 'Card 3', unidade: 'Stilo Cell', endereco: 'Avenida Rubens Caramez' },
+    { unidade: 'Click Componentes', endereco: 'Avenida Presidente Vargas', foto: '../assets/images/clickComponentes.jpg' },
+    { unidade: 'Click & Cell', endereco: 'Avenida Rubens Caramez', foto: '../assets/images/Stillo cell.jpg' },
+    { unidade: 'Stilo Cell', endereco: 'Avenida Rubens Caramez', foto: '../assets/images/Stillo cell.jpg' },
   ];
+
+  unidadeDisable = false;
+  enderecoDisable = false;
 
   constructor(private route: ActivatedRoute, private router: Router) {}
 
@@ -37,7 +40,7 @@ export class UnidadesComponent implements OnInit {
   filtrarCards() {
     const itemsOriginalJSON = localStorage.getItem('itemsOriginal');
     const itemsOriginal = itemsOriginalJSON ? JSON.parse(itemsOriginalJSON) : [];
-    
+  
     if (this.unidadeOption === '' && this.enderecoOption === '') {
       this.items = itemsOriginal;
     } else {
@@ -48,5 +51,5 @@ export class UnidadesComponent implements OnInit {
       });
       this.items = this.cardsFiltrados;
     }
-  } 
+  }
 }
