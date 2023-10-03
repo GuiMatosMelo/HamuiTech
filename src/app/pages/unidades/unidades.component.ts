@@ -13,9 +13,9 @@ export class UnidadesComponent implements OnInit {
   unidades: string[] = ['Click Componentes', 'Click & Cell', 'Stilo Cell'];
   enderecos: string[] = ['Avenida Presidente Vargas', 'Avenida Rubens Caramez'];
   items = [
-    { unidade: 'Click Componentes', endereco: 'Avenida Presidente Vargas', foto: '../assets/images/clickComponentes.jpg' },
-    { unidade: 'Click & Cell', endereco: 'Avenida Rubens Caramez', foto: '../assets/images/Stillo cell.jpg' },
-    { unidade: 'Stilo Cell', endereco: 'Avenida Rubens Caramez', foto: '../assets/images/Stillo cell.jpg' },
+    { unidade: 'Click Componentes', endereco: 'Avenida Presidente Vargas, N°217', foto: '../assets/images/clickComponentes.jpg' },
+    { unidade: 'Click & Cell', endereco: 'Avenida Rúbens Caramez, N°220', foto: '../assets/images/Stillo cell.jpg' },
+    { unidade: 'Stilo Cell', endereco: 'Avenida Rubens Caramez, N°175 - Central de Ofertas', foto: '../assets/images/Stillo cell.jpg' },
   ];
 
   unidadeDisable = false;
