@@ -14,7 +14,7 @@ export class CardComponent {
   whatsappIcon = faWhatsapp;
 
   enviarMensagemWhatsApp(): void {
-    const phoneNumber = '5511959324784';
+    const phoneNumber = '5511940645167';
     const message = 'Olá! Gostaria de realizar um orçamento com vocês. \n\nUnidade: ' + this.unidade;
 
     const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;

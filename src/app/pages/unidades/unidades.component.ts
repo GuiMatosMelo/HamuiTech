@@ -52,4 +52,16 @@ export class UnidadesComponent implements OnInit {
       this.items = this.cardsFiltrados;
     }
   }
+
+  getImageUrl() {
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth < 768) {
+      return '../../../assets/images/unidades_2.jpg';
+    } else if (windowWidth >= 768 && windowWidth < 1024) {
+      return '../../../assets/images/unidades.png';
+    } else {
+      return '../../../assets/images/unidades.png';
+    }
+  }
 }
