@@ -1,0 +1,13 @@
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.imageQuemSomos{
+    background-color: white;
+    border-radius: 360px;
+    border-style: double;
+    border-color: black ;
+    border-width: 10px;
+}

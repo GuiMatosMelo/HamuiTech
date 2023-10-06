@@ -1,3 +1,32 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11318702458');
+</script>
+<div class="screen">
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+    <!-- <div class="whatsapp-widget text-center">
+        <a href="https://api.whatsapp.com/send?phone=11940645167" target="_blank" class="whatsapp-link">
+            <fa-icon [icon]="whatsappIcon" class="whatsapp-icon"></fa-icon>
+            <span class="whatsapp-text">Entre em contato pelo WhatsApp</span>
+        </a>
+    </div> -->
+    <div class="text-center">
+        <a href="https://api.whatsapp.com/send?phone=11940645167" class="fixed z-90 bottom-10 right-8 bg-green-500 w-20 h-20 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl hover:bg-green-700 hover:drop-shadow-2xl hover:animate-bounce duration-300" target="_blank">
+            <fa-icon class="whatsapp-icon" [icon]="whatsappIcon"></fa-icon>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

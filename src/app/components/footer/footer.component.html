@@ -1,11 +1,22 @@
-<footer class="bg-gray-900 text-white p-6">
-    <div class="container mx-auto flex justify-between items-center">
-      <div>
-        <p>&copy; 2023 HamuiTech. Todos os direitos reservados.</p>
+<hr style="height: 25px; background-color:#1c74ba; border:none;">
+<footer class="bg-blue-900 dark:bg-gray-900">
+  <div class="container px-6 py-8 mx-auto">
+      <div class="flex flex-col items-center text-center">
+          <a href="#">
+            <img class="w-auto h-7" src="../../../assets/images/logoTransparente_2.jpg" alt="">
+          </a>
+          <div class="flex flex-wrap justify-center mt-6 -mx-4">
+              <a routerLink="/" class="mx-4 text-sm text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Inicio </a>
+              <a routerLink="/unidades" class="mx-4 text-sm text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Unidades </a>
+              <a routerLink="/servicos" class="mx-4 text-sm text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Serviços </a>
+              <a routerLink="/contato" class="mx-4 text-sm text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> Contato </a>
+              <a href="#FAQ" class="mx-4 text-sm text-white transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Reddit"> FAQ </a>
+          </div>
       </div>
-      <div class="flex space-x-4">
-        <a href="#" class="hover:text-gray-400">Política</a>
-        <a href="#" class="hover:text-gray-400">Termos de Uso</a>
+
+      <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+      <div class="text-center flex flex-col items-center">
+          <p class="text-sm text-white dark:text-gray-300">© Copyright 2023. Todos os direitos reservados.</p>
       </div>
-    </div>
+  </div>
 </footer>

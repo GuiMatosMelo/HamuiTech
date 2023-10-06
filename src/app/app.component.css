@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+.whatsapp-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: background-color 1.3s ease
+}
+
+.whatsapp-widget a {
+    display: block;
+    background-color: #25D366;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.whatsapp-widget a fa-icon {
+    margin-right: 1px;
+    font-size: 25px;
+}
+
+.whatsapp-widget span{
+    opacity: 0;
+    display: none;
+}
+
+.whatsapp-widget a:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-widget a:hover fa-icon {
+    margin-right: 5px;
+}
+
+.whatsapp-widget a:hover span {
+    opacity: 1;
+    display: inline;
+}
+
+.whatsapp-icon {
+    font-size: 40px;
+}
+  
+.screen{
+    background-image: url("../assets/images/background-white-2.jpg");
+}

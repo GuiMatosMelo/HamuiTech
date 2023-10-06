@@ -1,4 +1,17 @@
-<div class="bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 min-h-screen flex flex-col items-center justify-center">
-    <h1 class="text-4xl font-bold text-white mb-4">HOME EM MANUTENÇÃO!</h1>
-</div>
-  
+
+    <div class="h-screen">
+        <div class="w-full m-0">
+        <img [src]="getImageUrl()" alt="" srcset="" class="w-full min-h-screen p-0 m-0 ">
+        </div>
+    </div>
+    <app-grid-unidades></app-grid-unidades>
+    <div class="">
+        <app-grid-quem-somos></app-grid-quem-somos>
+    </div>
+    <div class="h-screen max-sm:h-auto max-sm:mb-16">
+        <app-grid-servicos></app-grid-servicos>
+    </div>
+    <div class="h-screen">
+        <app-grid-prova-social></app-grid-prova-social>
+    </div>
+    <app-grid-faq></app-grid-faq>
